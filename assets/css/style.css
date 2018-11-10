@@ -1,0 +1,456 @@
+/* A Linux- and Windows-friendly sans-serif font stack: http://prospects.mhurrell.co.uk/post/updating-the-helvetica-font-stack */
+body {
+    font: 13px Helmet, Freesans, sans-serif;
+}
+
+/* Using local fonts? Check out Font Squirrel's webfont generator: http://www.fontsquirrel.com/tools/webfont-generator */
+
+a {color: #f76625; cursor: pointer;}
+a:hover {color: #000;}
+
+/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
+::selection {background: #fcd700; color: #fff; text-shadow: none;}
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #fcd700;}
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+/* Mozilla dosen't style placeholders by default */
+input:-moz-placeholder { color:#a9a9a9; }
+textarea:-moz-placeholder { color:#a9a9a9; }
+
+/* let's give blockquotes *some* default styling, because unstyled blockquotes are dangerous */
+blockquote {padding: 16px; background: #eee;}
+
+
+
+/* Media queries
+-------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 480px) {
+
+
+}
+
+
+
+/* Print styles
+-------------------------------------------------------------------------------*/
+@media print {
+
+
+
+}
+
+/* My styles
+--------------------------------------------------------------------------*/
+html {background-image: url(../images/greynoise.jpg);}
+
+body {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: theano-modern;
+    src: url(../fonts/TheanoModern-Regular.ttf)
+}
+
+@font-face{
+    font-family: share-regular;
+    src: url(../fonts/Share-Regular.otf);
+}
+
+@font-face {
+    font-family: chunk;
+    src: url(../fonts/ChunkFive-Regular.ttf)
+}
+
+/* Header Styles */
+h1 {
+    float: right;
+    margin: 30px 0;
+    font-size: 100px;
+    font-family: chunk;
+}
+
+header {padding: 30px 0;}
+
+header h2 {
+    float: left;
+    padding: 70px 57px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+header h2 span {
+    font-size: 35px;
+    font-family: share regular;
+    background-color: #ffe867;
+    border-radius: 90%;
+    padding: 20px 13px;
+    line-height: 1.5;
+}
+
+/* Subtitle */
+.subtitle {
+    margin-bottom: 80px;
+    padding: 25px 0px 35px 1px;
+    border-top: solid #333 0.5px;
+    border-bottom: solid #333 0.5px;
+}
+
+.column {
+    width: 48%;
+    float: left;
+}
+
+.column:first-of-type {
+    margin-right: 30px;
+    border-right: solid #333 0.5px;
+    padding-right: 30px;
+}
+
+.column:last-of-type {
+    letter-spacing: 0.3px;
+}
+
+/* Body Styles */
+h3 {
+    margin-bottom: 60px;
+    font-size: 38px;
+    font-family: share-regular;
+}
+
+h3 span {font-family: share-regular;}
+
+p, span, li {
+    letter-spacing: -0.3px;
+    font-size: 20px;
+    font-family: theano-modern;
+}
+
+article {
+    margin-bottom: 60px;
+    border-bottom: solid #333 0.5px;
+    padding-bottom: 80px;
+}
+
+article h3 span {
+    margin-right: 10px;
+    color: #eeeeee;
+    background-color: #000;
+    border-radius: 50%;
+    padding: 15px 27px;
+    font-size: 35px;
+}
+
+/* By Genre Article */
+.genere {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+.genere li {
+    float: left;
+}
+
+.orange {
+    background-image: url(../images/orangenoise.jpg);
+    width: 32.9%;
+    height: 100%;
+}
+
+.blue {
+    background-image: url(../images/bluenoise.jpg);
+    width: 15.2%;
+    height: 100%;
+}
+
+.green {
+    background-image: url(../images/greennoise.jpg);
+    width: 13.1%;
+    height: 100%;
+}
+
+.yellow {
+    background-image: url(../images/yellownoise.jpg);
+    width: 10.7%;
+    height: 100%;
+}
+
+.pink {
+    background-image: url(../images/pinknoise.jpg);
+    width: 6.6%;
+    height: 100%;
+}
+
+.red {
+    background-image: url(../images/rednoise.jpg);
+    width: 6%;
+    height: 100%;
+}
+
+.brown {
+    background-image: url(../images/brownnoise.jpg);
+    width: 6%;
+    height: 100%;
+}
+
+.purple {
+    background-image: url(../images/purplenoise.jpg);
+    width: 5%;
+    height: 100%;
+}
+
+.cream {
+    background-image: url(../images/beigenoise.jpg);
+    width: 4.5%;
+    height: 100%;
+}
+
+.genere1 {
+    overflow: hidden;
+}
+
+.genere1 li {
+    float: left;
+    margin-right: 38px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.genere1 li span {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+/* By Origin Article */
+.origin li {
+    margin-bottom: 10px;
+}
+
+.origin li span {
+    display: inline-block;
+    margin-right: 25px;
+    height: 70px;
+    vertical-align: middle;
+}
+
+.origin .orange {width: 710px;}
+
+.origin .blue {width: 127px;}
+
+.origin .green {width: 83px;}
+
+.origin .yellow {width: 20.3px;}
+
+.origin .pink {width: 14.5px;}
+
+.origin .red {width: 4.85px;}
+
+.origin .brown {width: 4.85px;}
+
+.origin .purple {width: 4.85px;}
+
+/* By Label Color Article */
+.label {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 150px;
+}
+
+.label li {
+    position: absolute;
+    display: inline;
+    border-style: solid;
+}
+
+.label li:nth-of-type(1) {
+    border-color: #f5ee62 transparent transparent transparent;
+    border-width: 250px;
+    top: 0;
+    left: 0;
+}
+
+.label li:nth-of-type(2) {
+    border-color: #71d2fc transparent transparent transparent;
+    border-width: 190px;
+    top: 50%;
+    left: 240px;
+    margin-top: -100px;
+}
+
+.label li:nth-of-type(3) {
+    border-color: #fff transparent transparent transparent;
+    border-width: 190px;
+    top: 50%;
+    left: 430px;
+    margin-top: -100px;
+}
+
+.label li:nth-of-type(4) {
+    border-color: #000 transparent transparent transparent;
+    border-width: 160px;
+    top: 50%;
+    left: 620px;
+    margin-top: -70px;
+}
+
+.label li:nth-of-type(5) {
+    border-color: #f76625 transparent transparent transparent;
+    border-width: 146px;
+    top: 50%;
+    left: 780px;
+    margin-top: -55px;
+}
+
+.label li:nth-of-type(6) {
+    border-color: #ec1a23 transparent transparent transparent;
+    border-width: 133px;
+    top: 50%;
+    left: 920px;
+    margin-top: -40px;
+}
+
+.label li:nth-of-type(7) {
+    border-color: #3db84e transparent transparent transparent;
+    border-width: 60px;
+    top: 50%;
+    left: 1060px;
+    margin-top: 35px;
+}
+
+.label li:nth-of-type(8) {
+    border-color: #ec538b transparent transparent transparent;
+    border-width: 54px;
+    top: 50%;
+    left: 1108px;
+    margin-top: 42px;
+}
+
+.label li:nth-of-type(9) {
+    border-color: #7d7d7d transparent transparent transparent;
+    border-width: 18px;
+    top: 50%;
+    left: 1163px;
+    margin-top: 78px;
+}
+
+.label li:nth-of-type(10) {
+    border-color: #692693 transparent transparent transparent;
+    border-width: 12px;
+    top: 50%;
+    left: 1181px;
+    margin-top: 84px;
+}
+
+.label li:nth-of-type(11) {
+    border-color: #A0522D transparent transparent transparent;
+    border-width: 12px;
+    top: 50%;
+    left: 1192px;
+    margin-top: 84px;
+}
+
+/* By Decade Of Release Article */
+.decade {
+    position: relative;
+    height: 703px;
+}
+
+.decade li {position: absolute;}
+
+.decade li:nth-of-type(1) {
+    border-radius: 50%;
+    background-image: url(../images/bluenoise.jpg);
+    padding: 284px 233px;
+    font-size: 80px;
+    top: 0;
+    left: 0;
+}
+
+.decade li:nth-of-type(2) {
+    border-radius: 50%;
+    background-image: url(../images/greennoise.jpg);
+    padding: 174px 150px;
+    font-size: 80px;
+    top: 0;
+    left: 700px;
+}
+
+.decade li:nth-of-type(3) {
+    border-radius: 50%;
+    background-image: url(../images/orangenoise.jpg);
+    padding: 18px 7px;
+    font-size: 16px;
+    top: 0;
+    left: 1165px;
+    /* right: 0; */
+}
+
+/* Oldest - Newest Article */
+.oldest {
+    position: relative;
+    width: 100%;
+    height: 1px;
+    margin: 200px 0 190px 0;
+    border-top: #000 dashed 0.5px;
+}
+
+.oldest li.pink {
+    position: absolute;
+    left: 0;
+    top: -120px;
+    width: 240px;
+    height: 240px;
+    padding: 80px 0 0 0;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 50px;
+}
+
+.oldest li.yellow {
+    position: absolute;
+    right: 0;
+    top: -120px;
+    width: 240px;
+    height: 240px;
+    padding: 80px 0 0 0;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 50px;
+}
+
+.newest span.yellow {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.newest span.pink {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: bottom;
+    border-radius: 50%;
+}
+
+/* Footer */
+footer {margin-bottom: 135px;}
+
+footer h3 {margin-bottom: 25px}
