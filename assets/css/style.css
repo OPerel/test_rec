@@ -5,7 +5,7 @@ body {
 
 /* Using local fonts? Check out Font Squirrel's webfont generator: http://www.fontsquirrel.com/tools/webfont-generator */
 
-a {color: #f76625; cursor: pointer;}
+a {color: #f76625; cursor: pointer; text-decoration: none;}
 a:hover {color: #000;}
 
 /* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
@@ -81,17 +81,17 @@ header {padding: 30px 0;}
 
 header h2 {
     float: left;
-    padding: 70px 57px;
+    padding: 68px 57px;
     background-color: #000;
     border-radius: 50%;
 }
 
 header h2 span {
     font-size: 35px;
-    font-family: share regular;
+    font-family: share-regular;
     background-color: #ffe867;
     border-radius: 90%;
-    padding: 20px 13px;
+    padding: 18px 13px;
     line-height: 1.5;
 }
 
@@ -382,7 +382,7 @@ article h3 span {
 .decade li:nth-of-type(2) {
     border-radius: 50%;
     background-image: url(../images/greennoise.jpg);
-    padding: 174px 150px;
+    padding: 174px 120px;
     font-size: 80px;
     top: 0;
     left: 700px;
